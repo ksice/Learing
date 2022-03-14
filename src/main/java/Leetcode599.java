@@ -3,6 +3,15 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
+ * Suppose Andy and Doris want to choose a restaurant for dinner, and they both have a list of favorite restaurants represented by strings.
+ * <p>
+ * You need to help them find out their common interest with the least list index sum. If there is a choice tie between answers, output all of them with no order requirement. You could assume there always exists an answer.
+ * <p>
+ * <p>
+ * <p>
+ * 来源：力扣（LeetCode）
+ * 链接：https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists
+ *
  * @author ksice
  * @since 2022-03-14 下午4:51
  */
