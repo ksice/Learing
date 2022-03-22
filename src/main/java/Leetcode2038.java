@@ -22,6 +22,7 @@
  */
 public class Leetcode2038 {
 
+    //比较谁可以操作的数目多谁就赢
     public boolean winnerOfGame(String colors) {
         char[] chars = colors.toCharArray();
 

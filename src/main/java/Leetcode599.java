@@ -3,14 +3,13 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Suppose Andy and Doris want to choose a restaurant for dinner, and they both have a list of favorite restaurants represented by strings.
+ * 假设 Andy 和 Doris 想在晚餐时选择一家餐厅，并且他们都有一个表示最喜爱餐厅的列表，每个餐厅的名字用字符串表示。
  * <p>
- * You need to help them find out their common interest with the least list index sum. If there is a choice tie between answers, output all of them with no order requirement. You could assume there always exists an answer.
- * <p>
- * <p>
+ * 你需要帮助他们用最少的索引和找出他们共同喜爱的餐厅。 如果答案不止一个，则输出所有答案并且不考虑顺序。 你可以假设答案总是存在。
  * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists
+ * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author ksice
  * @since 2022-03-14 下午4:51
