@@ -14,8 +14,6 @@ import java.util.List;
  */
 public class Offer45 {
     public static void main(String[] args) {
-        int i = "1302".compareTo("201");
-        System.out.println(i);
         minNumber(new int[]{
                 10, 2, 3, 5, 4
         });
@@ -31,14 +29,13 @@ public class Offer45 {
 
         list.sort(new Comparator<String>() {
             //例如{10,2,3,5,4},102<201 那么把2放在前面，因为是要最小值
+            //-1是升序，1是降序,字符串比较是比较第一位值
             @Override
             public int compare(String o1, String o2) {
                 int i = (o1 + o2).compareTo(o2 + o1);
                 return i;
             }
         });
-
-        System.out.println(list);
 
         StringBuilder str = new StringBuilder();
         list.forEach(s -> {
