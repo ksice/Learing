@@ -10,11 +10,18 @@ package leetcode;
 public class Leetcode307 {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 3, 5};
+
+//        for (int i = 0; i <10 ; i++) {
+//            int i1 = i & -i;
+//            System.out.println(i1);
+//        }
+
+
+        int[] nums = new int[]{1, 3, 5, 8, 10};
         NumArray numArray = new NumArray(nums);
 
         int i = numArray.sumRange(0, 2);
-        System.out.println(i);
+//        System.out.println(i);
     }
 
     static class NumArray {
@@ -57,6 +64,10 @@ public class Leetcode307 {
             for (int i = 0; i < n; i++) {
                 add(i + 1, nums[i]);
             }
+
+            for (int i = 0; i < tree.length; i++) {
+                System.out.println(tree[i]);
+            }
         }
 
         public void update(int index, int val) {
@@ -66,7 +77,9 @@ public class Leetcode307 {
 
         public int sumRange(int left, int right) {
 
-            return query(right + 1) - query(left);
+            int query = query(right + 1);
+            System.out.println(query);
+            return query - query(left);
         }
     }
 
