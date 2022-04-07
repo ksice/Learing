@@ -16,7 +16,7 @@ public class Leetcode796 {
     }
 
     /**
-     * kmp算法模板
+     * kmp算法模板用来查找str里面是否存在pattern
      */
 //
 //    static int N = 10010;
