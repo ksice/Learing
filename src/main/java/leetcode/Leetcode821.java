@@ -75,6 +75,7 @@ public class Leetcode821 {
             }
         }
 
+        //先找到c作为出发点，两边开始拓展，同时用-1作为判断防止重复入值，然后通过前缀和加1得出路径
         //通过-1来判断不能重复判断，不用担心多个C，先进先出，loevlcaaae 近的肯定已经先判断插入值了
         while (!queue.isEmpty()) {
             int pos = queue.poll();
