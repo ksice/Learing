@@ -1,6 +1,8 @@
 package leetcode.may;
 
 /**
+ * 目标和
+ *
  * @Version : 1.0
  * @Creation : 2022/5/9 下午1:11
  * @Author : ksice_xt
@@ -18,7 +20,7 @@ public class Leetcode494 {
     }
 
     /**
-     * u代表下标，cur代表结果值，
+     * u代表下标，cur代表结果值，回溯算法，适应数据范围较小的
      *
      * @param nums
      * @param t
