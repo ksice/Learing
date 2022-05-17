@@ -14,7 +14,11 @@ import java.util.Map;
  */
 public class Leetcode525 {
 
-    public int findMaxLength(int[] nums) {
+    public static void main(String[] args) {
+        findMaxLength(new int[]{0,1,0,0,1});
+    }
+
+    public static int findMaxLength(int[] nums) {
 
         int[] ints = new int[nums.length + 1];
 
@@ -30,13 +34,10 @@ public class Leetcode525 {
             if (!map.containsKey(ints[i - 2])) {
                 map.put(ints[i - 2], i - 2);
             }
-
             if (map.containsKey(ints[i])) {
                 ans = Math.max(ans, i - map.get(ints[i]));
             }
-
         }
-
         return ans;
     }
 }
