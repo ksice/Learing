@@ -1,9 +1,7 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
 
 /**
  * @Version : 1.0
@@ -46,6 +44,10 @@ public class Test1 {
      * @param args
      */
     public static void main(String[] args) {
+        System.out.println(1 & 1);
+        System.out.println(1 & 0);
+        System.out.println(0 & 0);
+
     }
 
 //    public static List<String> v1(Object[] str, String[] target) {
