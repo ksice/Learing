@@ -9,9 +9,13 @@ import java.util.*;
  */
 public class Test {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         String[] strings = {"a","b","c","d"};
         v1(strings);
+        while (true){
+            Thread.sleep(5000);
+            System.out.println();
+        }
     }
 
     public static List<String> v1(String[] str) {
