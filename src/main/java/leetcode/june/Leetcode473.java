@@ -50,6 +50,8 @@ public class Leetcode473 {
             if (cur[i] + u > t) {
                 continue;
             }
+            //{5,5,5,5,4,4,4,4,3,3,3,3}
+            //回溯算法，例如第一次选的5发现不行，再换一个再选，例如简约版八皇后
             cur[i] += u;
             if (dfs(idx - 1, cur)) {
                 return true;
