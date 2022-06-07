@@ -12,6 +12,7 @@ public class MergeTwoSortedLists {
         ListNode listNode = new ListNode(0);
         ListNode listNode1 = list1;
         ListNode listNode2 = list2;
+        //要重新赋值才能进行下一个next传递
         ListNode pre = listNode;
 
         if (list1 == null || list2 == null) {
