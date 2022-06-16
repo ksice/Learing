@@ -1,8 +1,5 @@
 package test;
 
-import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
-
 /**
  * @Version : 1.0
  * @Creation : 2022/4/2 下午4:57
@@ -43,11 +40,48 @@ public class Test1 {
      *
      * @param args
      */
-    public static void main(String[] args) {
-        System.out.println(1 & 1);
-        System.out.println(1 & 0);
-        System.out.println(0 & 0);
+    public static void main(String []args){
+        System.out.println(test1());
+        System.out.println("-------------------------------------------------");
+        System.out.println(test2());
 
+    }
+
+    private static int test1() {
+        int b = 20;
+        try {
+            System.out.println("try语句块");
+            throw new RuntimeException("");
+        }catch (Exception e){
+            System.out.println("catch语句块");
+            return 1;
+        }finally {
+            System.out.println("finally语句块");
+            if (b>25){
+                System.out.println("b>25,b="+b);
+            }
+            return 100;
+        }
+    }
+
+    private static int test2() {
+        int b = 20;
+        try {
+            System.out.println("try语句块");
+            return b+=80;
+        }catch (Exception e){
+            System.out.println("catch语句块");
+        }finally {
+            System.out.println("finally语句块");
+            if (b>25){
+                System.out.println("b>25,b="+b);
+            }
+            return 200;
+        }
+    }
+    public <T extends Number> double revert() {
+
+        return 1L;
     }
 
 //    public static List<String> v1(Object[] str, String[] target) {
