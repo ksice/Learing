@@ -19,7 +19,7 @@ public class Leetcode652 {
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         dfs(root);
 
-        return null;
+        return ans;
 
     }
 
